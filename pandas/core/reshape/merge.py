@@ -245,7 +245,7 @@ def merge_ordered(
     1   c       2
     2   d       3
 
-    >>> merge_ordered(df1, df2, fill_method="ffill", left_by="group")
+    >>> merge_ordered(df1, df2, on="key", fill_method="ffill", left_by="group")
       key  lvalue group  rvalue
     0   a       1     a     NaN
     1   b       1     a     1.0
